@@ -7,9 +7,9 @@ fi
 
 # ===== Env =====
 
-if [[ "$PROJECT_HOME" == "" ]] then
-    echo "Missing Environment Variable `PROJECT_HOME`"
-fi
+#if [[ "$PROJECT_HOME" == "" ]] then
+#    echo "Missing Environment Variable `PROJECT_HOME`"
+#fi
 
 ## Java
 
@@ -33,11 +33,11 @@ alias dlv-attach="dlv --listen=:2345 --headless=true --api-version=2 attach"
 alias dlv-exec="dlv --listen=:2345 --headless=true --api-version=2 exec"
 
 ## Istio
-export ISTIO_HOME=$PROJECT_HOME/istio/istio-$ISTIO_VERSION
-if [[ -d "$ISTIO_HOME" ]] then
-    export PATH=$ISTIO_HOME/bin:$PATH
-    source $ISTIO_HOME/tools/_istioctl
-fi
+#export ISTIO_HOME=$PROJECT_HOME/istio/istio-$ISTIO_VERSION
+#if [[ -d "$ISTIO_HOME" ]] then
+#    export PATH=$ISTIO_HOME/bin:$PATH
+#    source $ISTIO_HOME/tools/_istioctl
+#fi
 
 ## Kubernetes
 
